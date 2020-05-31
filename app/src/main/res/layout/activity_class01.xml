@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="left"
+    android:background="#FCFCFC"
+    android:padding="15dp"
+    tools:context=".Class01Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="15dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/apple_logo01"
+            android:scaleType="fitCenter"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="아이디" />
+
+    <EditText
+        android:id="@+id/idEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="이메일 양식으로 입력하세요."
+        android:inputType="textEmailAddress"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="비밀번호" />
+
+    <EditText
+        android:id="@+id/pwdEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="(숫자) 비밀번호 입력하세요."
+        android:inputType="numberPassword"/>
+
+    <CheckBox
+        android:id="@+id/autoChkYn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="자동로그인"
+        android:layout_marginTop="5dp"
+        android:checked="false"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/groupRgBtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="일반사용자"/>
+        <RadioButton
+            android:id="@+id/groupRgBtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="가맹사용자"/>
+        <RadioButton
+            android:id="@+id/groupRgBtn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="관리자"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="로그인"/>
+
+        <Button
+            android:id="@+id/registerBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="회원가입"/>
+
+    </LinearLayout>
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="켜짐"
+        android:textOff=" 꺼짐"
+        android:visibility="gone"/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="푸시알림 on/off"
+        android:visibility="invisible"/>
+
+</LinearLayout>

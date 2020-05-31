@@ -9,6 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Class01ChangeNicknameActivity"></activity>
+        <activity android:name=".Class01LoginViewActivity" />
+        <activity android:name=".Class01RegisterResultActivity" />
+        <activity android:name=".Class01RegisterActivity" />
+        <activity android:name=".Class01Activity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
