@@ -26,6 +26,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
+        android:text="회원 유형" />
+
+    <TextView
+        android:id="@+id/usrInfoTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="#000fff"
+        android:text="로그인한 회원의 유형"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
         android:text="닉네임" />
 
     <LinearLayout
@@ -69,16 +83,11 @@
 
         <EditText
             android:id="@+id/telEdt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="상대방 전화번호를 입력"
-            android:inputType="phone"/>
-
-        <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            />
+            android:hint="상대방 전화번호를 입력"
+            android:inputType="phone"/>
 
         <Button
             android:id="@+id/telBtn"
@@ -103,15 +112,10 @@
 
         <EditText
             android:id="@+id/smsEdt"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:hint="문자로 보낼 내용"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            />
 
         <Button
             android:id="@+id/smsBtn"
@@ -120,5 +124,17 @@
             android:text="문자전송"/>
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/webSiteBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="웹사이트(WEB)"/>
+
+    <Button
+        android:id="@+id/playStoreBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="플레이스토어(Playstore)"/>
 
 </LinearLayout>

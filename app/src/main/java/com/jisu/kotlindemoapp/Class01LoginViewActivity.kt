@@ -17,7 +17,9 @@ class Class01LoginViewActivity : AppCompatActivity() {
 
         // 로그인 아이디
         val idContent = intent.getStringExtra("idEdit")
+        val usrInfoContent = intent.getStringExtra("usrInfo")
         idTxt.text = idContent
+        usrInfoTxt.text = usrInfoContent
 
         chgNickNameBtn.setOnClickListener {
             val class01ChangeNicknameActivity = Intent(this,Class01ChangeNicknameActivity::class.java)
@@ -38,6 +40,18 @@ class Class01LoginViewActivity : AppCompatActivity() {
             val myUri = Uri.parse("smsto:${telEdt}")
             val myIntent = Intent(Intent.ACTION_SENDTO, myUri)
             myIntent.putExtra("sms_body",smsEdit)
+            startActivity(myIntent)
+        }
+
+        webSiteBtn.setOnClickListener {
+            val myUri = Uri.parse("http://www.naver.com")
+            val myIntent = Intent(Intent.ACTION_VIEW, myUri)
+            startActivity(myIntent)
+        }
+
+        playStoreBtn.setOnClickListener {
+            val myUri = Uri.parse("market://details?id=com.kakao.talk")
+            val myIntent = Intent(Intent.ACTION_VIEW, myUri)
             startActivity(myIntent)
         }
     }

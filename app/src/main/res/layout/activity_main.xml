@@ -28,38 +28,16 @@
         android:text="수업 Samples"
         />
 
-    <LinearLayout
+    <Button
+        android:id="@+id/cBtn01"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical">
+        android:text="1주차"/>
 
-        <Button
-            android:id="@+id/cBtn01"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="1주차"/>
-
-    </LinearLayout>
-
-    <TextView
+    <Button
+        android:id="@+id/cBtn02"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="Github Samples"
-        />
+        android:text="2주차"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical">
-
-        <Button
-            android:id="@+id/gBtn01"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="1주차"/>
-
-    </LinearLayout>
 </LinearLayout>
