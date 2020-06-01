@@ -53,7 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#000fff"
-            android:text="코틀린수강생01"/>
+            android:text="본인 닉네임 표시"/>
 
         <TextView
             android:layout_width="0dp"
@@ -113,13 +113,14 @@
         <EditText
             android:id="@+id/smsEdt"
             android:layout_width="0dp"
-            android:layout_weight="1"
+            android:layout_weight="0.79"
             android:layout_height="wrap_content"
             android:hint="문자로 보낼 내용"/>
 
         <Button
             android:id="@+id/smsBtn"
-            android:layout_width="80dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.21"
             android:layout_height="wrap_content"
             android:text="문자전송"/>
 

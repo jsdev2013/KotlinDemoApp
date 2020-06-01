@@ -22,7 +22,22 @@ class Class01LoginViewActivity : AppCompatActivity() {
         usrInfoTxt.text = usrInfoContent
 
         chgNickNameBtn.setOnClickListener {
+            val nickNameAsis = nickNameTxt.text
+
             val class01ChangeNicknameActivity = Intent(this,Class01ChangeNicknameActivity::class.java)
+
+//            if (nickNameAsis.equals("본인 닉네임 표시")){
+//                class01ChangeNicknameActivity.putExtra("nickNameAsis","")
+//            } else {
+//                class01ChangeNicknameActivity.putExtra("nickNameAsis",nickNameAsis)
+//            }
+
+            //if를 when으로 변경
+            when (nickNameAsis){
+                "본인 닉네임 표시"->{class01ChangeNicknameActivity.putExtra("nickNameAsis","")}
+                else->class01ChangeNicknameActivity.putExtra("nickNameAsis",nickNameAsis)
+            }
+
             startActivityForResult(class01ChangeNicknameActivity, REQ_FOR_MESSAGE)
         }
 
