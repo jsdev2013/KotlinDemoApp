@@ -1,18 +1,16 @@
-package com.jisu.kotlindemoapp.class03.fragments
+package com.jisu.kotlindemoapp.class03.fragmentsMain
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
 import com.jisu.kotlindemoapp.BaseFragment
 import com.jisu.kotlindemoapp.R
 import com.jisu.kotlindemoapp.class03.adapter.StudentAdapter
 import com.jisu.kotlindemoapp.class03.datas.Student
-import kotlinx.android.synthetic.main.activity_class03_second_fragment.*
+import kotlinx.android.synthetic.main.activity_class03_main_second_fragment.*
 
-class SecondFragment : BaseFragment() {
+class MainSecondFragment : BaseFragment() {
 
     val students = ArrayList<Student>()
     lateinit var studentAdapter : StudentAdapter
@@ -22,7 +20,7 @@ class SecondFragment : BaseFragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.activity_class03_second_fragment, container, false)
+        return inflater.inflate(R.layout.activity_class03_main_second_fragment, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

@@ -7,11 +7,11 @@ android {
     buildToolsVersion "29.0.3"
 
     defaultConfig {
-        applicationId "com.jisu.kotlindemoapp"
-        minSdkVersion 14
+        applicationId "com.jisu.kotlindemoapp"  /*플레이스토어에 올라가는 이름(패키지 이름을 잘 짓자)*/
+        minSdkVersion 14                        /*프로젝트 생성 시 결정한 최소버전*/
         targetSdkVersion 29
-        versionCode 1
-        versionName "1.0"
+        versionCode 1                           /*플레이스토어에 APK 올릴때마다 습관적으로 1씩 늘려주자*/
+        versionName "1.0"                       /*1.0등으로 사용자에게 표시해주는 버전이름, 10.0.23 식으로 표시*/
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -25,6 +25,7 @@ android {
 
 }
 
+/*프로젝트에서 사용하는 외부 라이브러리 목록 명시 공간*/
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"

@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:padding="10dp"
     android:background="#F26764"
-    tools:context=".class03.fragments.FirstFragment">
+    tools:context=".class03.fragmentsMain.MainFirstFragment">
 
     <TextView
         android:layout_width="wrap_content"

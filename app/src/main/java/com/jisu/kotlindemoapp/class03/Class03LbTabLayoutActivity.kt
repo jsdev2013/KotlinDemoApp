@@ -18,7 +18,7 @@ class Class03LbTabLayoutActivity : BaseActivity() {
         setValues()
     }
     override fun setupEvents() {
-        myPagerAdater = MyPagerAdapter(supportFragmentManager)
+        myPagerAdater = MyPagerAdapter(supportFragmentManager, "Main")
         myViewPager.adapter = myPagerAdater
 
 //        탭레이아웃과 뷰페이저를 연결

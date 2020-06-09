@@ -1,4 +1,4 @@
-package com.jisu.kotlindemoapp.class03.fragments
+package com.jisu.kotlindemoapp.class03.fragmentsMain
 
 import android.content.Intent
 import android.net.Uri
@@ -9,9 +9,9 @@ import android.view.ViewGroup
 import com.jisu.kotlindemoapp.BaseFragment
 import com.jisu.kotlindemoapp.R
 import com.jisu.kotlindemoapp.class01.Class01ChangeNicknameActivity
-import kotlinx.android.synthetic.main.activity_class03_first_fragment.*
+import kotlinx.android.synthetic.main.activity_class03_main_first_fragment.*
 
-class FirstFragment : BaseFragment() {
+class MainFirstFragment : BaseFragment() {
 
 // 프래그먼트에 뷰페이저 넣을 때
 // supportFragmentManager 말고 다른 파라미터 넣어야 함
@@ -21,7 +21,7 @@ class FirstFragment : BaseFragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.activity_class03_first_fragment, container, false)
+        return inflater.inflate(R.layout.activity_class03_main_first_fragment, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
