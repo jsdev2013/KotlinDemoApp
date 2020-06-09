@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".class02.Class02FragmentLayoutActivity">
+
+    <fragment
+        android:tag="첫번째플래그먼트"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        class="com.jisu.kotlindemoapp.class02.fragments.FirstFragment"/>
+
+    <fragment
+        android:tag="두번째플래그먼트"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        class="com.jisu.kotlindemoapp.class02.fragments.SecondFragment"/>
+
+    <fragment
+        android:tag="세번째플래그먼트"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        class="com.jisu.kotlindemoapp.class02.fragments.ThirdFragment"/>
+
+</LinearLayout>

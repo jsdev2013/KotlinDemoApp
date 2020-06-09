@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".class02.Class02Activity">
+
+    <Button
+        android:id="@+id/listViewBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ListView (Student)"/>
+
+    <Button
+        android:id="@+id/recyclerViewBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RecyclerView (Student)"/>
+
+    <Button
+        android:id="@+id/listViewZickbangBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ListView (Zickbang)"/>
+
+    <Button
+        android:id="@+id/recyclerViewZickbangBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RecyclerView (Zickbang)"/>
+
+    <Button
+        android:id="@+id/androidLifeCycleBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Android Life cycle"/>
+
+    <Button
+        android:id="@+id/fragmentLayoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragment+Layout"/>
+
+    <Button
+        android:id="@+id/fragmentViewPagerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="fragment+ViewPager"/>
+
+</LinearLayout>

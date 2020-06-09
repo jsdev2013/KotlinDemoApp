@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="15dp"
-    tools:context=".Class01ChangeNicknameActivity">
+    tools:context=".class01.Class01ChangeNicknameActivity">
 
     <EditText
         android:id="@+id/chgNickEdt"

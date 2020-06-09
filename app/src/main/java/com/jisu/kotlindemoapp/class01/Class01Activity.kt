@@ -1,11 +1,11 @@
-package com.jisu.kotlindemoapp
+package com.jisu.kotlindemoapp.class01
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.RadioButton
 import android.widget.Toast
+import com.jisu.kotlindemoapp.R
 import kotlinx.android.synthetic.main.activity_class01.*
 
 class Class01Activity : AppCompatActivity() {
@@ -20,7 +20,8 @@ class Class01Activity : AppCompatActivity() {
             val autoChkYn = autoChkYn.isChecked
             val radioChk = radio_group.checkedRadioButtonId
 
-            val class01LoginViewActivity = Intent(this,Class01LoginViewActivity::class.java)
+            val class01LoginViewActivity = Intent(this,
+                Class01LoginViewActivity::class.java)
             class01LoginViewActivity.putExtra("idEdit", idEdit)
 
             if(radioChk != -1){

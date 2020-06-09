@@ -1,7 +1,8 @@
-package com.jisu.kotlindemoapp
+package com.jisu.kotlindemoapp.class01
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.jisu.kotlindemoapp.R
 
 class Class01RegisterResultActivity : AppCompatActivity() {
 

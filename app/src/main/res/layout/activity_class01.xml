@@ -10,7 +10,7 @@
     android:gravity="left"
     android:background="#FCFCFC"
     android:padding="15dp"
-    tools:context=".Class01Activity">
+    tools:context=".class01.Class01Activity">
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -1,10 +1,11 @@
-package com.jisu.kotlindemoapp
+package com.jisu.kotlindemoapp.class01
 
 import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.jisu.kotlindemoapp.R
 import kotlinx.android.synthetic.main.activity_class01_register_activty.*
 
 class Class01RegisterActivity : AppCompatActivity() {

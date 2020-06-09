@@ -1,10 +1,10 @@
-package com.jisu.kotlindemoapp
+package com.jisu.kotlindemoapp.class01
 
 import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Editable
+import com.jisu.kotlindemoapp.R
 import kotlinx.android.synthetic.main.activity_class01_change_nickname.*
 
 class Class01ChangeNicknameActivity : AppCompatActivity() {

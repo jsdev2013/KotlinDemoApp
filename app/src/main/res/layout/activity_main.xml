@@ -40,4 +40,10 @@
         android:layout_height="wrap_content"
         android:text="2주차"/>
 
+    <Button
+        android:id="@+id/cBtn03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3주차"/>
+
 </LinearLayout>

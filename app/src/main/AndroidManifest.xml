@@ -9,18 +9,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Class01ChangeNicknameActivity"></activity>
-        <activity android:name=".Class01LoginViewActivity" />
-        <activity android:name=".Class01RegisterResultActivity" />
-        <activity android:name=".Class01RegisterActivity" />
-        <activity android:name=".Class01Activity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".class03.Class03LbTabLayoutActivity"></activity>
+        <activity android:name=".class03.Class03Activity" />
+        <activity android:name=".class02.Class02AndroidLifeCycleOtherActivity" />
+        <activity android:name=".class02.Class02FragmentViewPagerActivity" />
+        <activity android:name=".class02.Class02FragmentLayoutActivity" />
+        <activity android:name=".class02.Class02AndroidLifeCycleActivity" />
+        <activity android:name=".class02.Class02ListViewRoomDetailActivity" />
+        <activity android:name=".class02.class02ListViewRoomDetailActivity" />
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".class02.Class02RecyclerViewZickbangActivity" />
+        <activity android:name=".class02.Class02ListViewZickbangActivity" />
+        <activity android:name=".class02.Class02RecyclerViewActivity" />
+        <activity android:name=".class02.Class02ListViewActivity" />
+        <activity android:name=".class02.Class02Activity" />
+        <activity android:name=".class01.Class01ChangeNicknameActivity" />
+        <activity android:name=".class01.Class01LoginViewActivity" />
+        <activity android:name=".class01.Class01RegisterResultActivity" />
+        <activity android:name=".class01.Class01RegisterActivity" />
+        <activity android:name=".class01.Class01Activity" />
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
