@@ -31,7 +31,7 @@ class MainThirdFragment : BaseFragment() {
     override fun setupEvents() {
 
         // 프래그먼트에 뷰페이저 넣을 때
-        // supportFragmentManager 말고 다른 파라미터 넣어야 함
+        // supportFragmentManager => activity!!.supportFragmentManager
         myPagerAdater = MyPagerAdapter(activity!!.supportFragmentManager, "Sub")
         mySubViewPager.adapter = myPagerAdater
     }

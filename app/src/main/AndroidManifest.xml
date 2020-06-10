@@ -2,21 +2,30 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.jisu.kotlindemoapp">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".class03.Class03LbTabLayoutActivity"></activity>
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".class03.Class03LbFabLoadingActivity"></activity>
+        <activity android:name=".class03.Class03LbGlideTedPermissionActivity" />
+        <activity
+            android:name=".class03.Class03LbPhotoViewActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".class03.Class03LbCircleImageViewActivity" />
+        <activity android:name=".class03.Class03LbTabLayoutActivity" />
         <activity android:name=".class03.Class03Activity" />
         <activity android:name=".class02.Class02AndroidLifeCycleOtherActivity" />
         <activity android:name=".class02.Class02FragmentViewPagerActivity" />
         <activity android:name=".class02.Class02FragmentLayoutActivity" />
         <activity android:name=".class02.Class02AndroidLifeCycleActivity" />
         <activity android:name=".class02.Class02ListViewRoomDetailActivity" />
-        <activity android:name=".class02.class02ListViewRoomDetailActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

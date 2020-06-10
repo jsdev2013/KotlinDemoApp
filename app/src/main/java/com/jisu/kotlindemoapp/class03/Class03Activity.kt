@@ -21,6 +21,16 @@ class Class03Activity : BaseActivity() {
             val myIntent = Intent(this, Class03LbTabLayoutActivity::class.java)
             startActivity(myIntent)
         }
+
+        lbCircleImageBtn.setOnClickListener {
+            val myIntent = Intent(this, Class03LbCircleImageViewActivity::class.java)
+            startActivity(myIntent)
+        }
+
+        lbGlideTedPmBtn.setOnClickListener {
+            val myIntent = Intent(this, Class03LbGlideTedPermissionActivity::class.java)
+            startActivity(myIntent)
+        }
     }
 
     override fun setValues() {

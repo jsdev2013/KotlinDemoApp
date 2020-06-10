@@ -22,26 +22,19 @@ class MyPagerAdapter (fm: FragmentManager, FragmentCd :String) :FragmentPagerAda
     }
 
     override fun getItem(position: Int): Fragment {
-
-        if(whichFragments == "Sub"){
-            return when(position){
-                0 -> SubFirstFragment()
-                else -> SubSecondFragment()
-            }
-        } else {
-            return when(position){
-                0 -> MainFirstFragment()
-                1 -> MainSecondFragment()
-                else -> MainThirdFragment()
-            }
+        return when(whichFragments){
+            "Sub" -> when (position) {  0 -> SubFirstFragment()
+                                        else -> SubSecondFragment()}
+            else -> when (position)  {  0 -> MainFirstFragment()
+                                        1 -> MainSecondFragment()
+                                        else -> MainThirdFragment()}
         }
     }
 
     override fun getCount(): Int {
-        if(whichFragments == "Sub"){
-            return 2
-        } else {
-            return 3
+        return when(whichFragments){
+            "Sub" -> return 2
+            else -> return 3
         }
     }
 }

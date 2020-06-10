@@ -12,6 +12,18 @@
         android:id="@+id/lbTabLayoutBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Library (TabLayout)"/>
+        android:text="Fragment + ViewPager + Lib (TabLayout)"/>
+
+    <Button
+        android:id="@+id/lbCircleImageBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lib (CircleImage + PhoteView)"/>
+
+    <Button
+        android:id="@+id/lbGlideTedPmBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lib (Glide + TedPermission)"/>
 
 </LinearLayout>

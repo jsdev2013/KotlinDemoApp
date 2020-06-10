@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#FFE793"
-    tools:context=".class03.fragments.FirstFragment">
+    tools:context=".class03.fragmentsMain.MainSecondFragment">
 
     <TextView
         android:layout_width="wrap_content"
