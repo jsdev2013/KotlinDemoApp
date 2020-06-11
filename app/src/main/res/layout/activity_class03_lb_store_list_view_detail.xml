@@ -16,26 +16,19 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/logoImg"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
             app:civ_border_width="2dp"
-            android:paddingRight="15dp"
             tools:src="@mipmap/ic_launcher"
             app:civ_border_color="#000000"/>
 
     </LinearLayout>
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/imgViewPager"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="15sp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="15dp"
         android:text="가게 이름"/>
 
     <TextView
@@ -48,8 +41,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="전화번호"/>
+        android:layout_marginTop="15dp"
+        android:text="대표 전화번호"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -66,9 +59,52 @@
 
         <Button
             android:id="@+id/telBtn"
-            android:layout_width="100dp"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:text="전화\n연결"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="@color/lightGreen"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="이달의 추천 메뉴 &amp; 이벤트"/>
+
+    <LinearLayout
+        android:id="@+id/imgLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/imgViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/menuImgUrlTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/itemImgUrlTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
     </LinearLayout>
 

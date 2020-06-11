@@ -50,15 +50,15 @@ class PizzaFragment : BaseFragment() {
         val misterLogUrl = "https://post-phinf.pstatic.net/MjAxODEyMDVfMzYg/MDAxNTQzOTYxOTA4NjM3.8gsStnhxz7eEc9zpt5nmSRZmI-Pzpl4NJvHYU-Dlgmcg.7Vpgk0lopJ5GoTav3CUDqmXi2-_67S5AXD0AGbbR6J4g.JPEG/IMG_1641.jpg?type=w1200"
         val dominoLogUrl = "https://pbs.twimg.com/profile_images/1098371010548555776/trCrCTDN_400x400.png"
 
-        val pizzahutMenuUrl = "https://www.pizzamaru.co.kr/resources/images/menu/gold/gol1_L_01.png"
-        val papazonsMenuUrl = "https://www.pizzamaru.co.kr/resources/images/menu/gold/gol1_L_01.png"
-        val misterMenuUrl = "https://www.pizzamaru.co.kr/resources/images/menu/gold/gol1_L_01.png"
-        val dominoMenuUrl = "https://www.pizzamaru.co.kr/resources/images/menu/gold/gol1_L_01.png"
+        val pizzahutMenuUrl = "https://image.edaily.co.kr/images/Photo/files/NP/S/2014/08/PS14081900448.jpg"
+        val papazonsMenuUrl = "https://image.edaily.co.kr/images/Photo/files/NP/S/2014/08/PS14081900448.jpg"
+        val misterMenuUrl = "https://image.edaily.co.kr/images/Photo/files/NP/S/2014/08/PS14081900448.jpg"
+        val dominoMenuUrl = "https://image.edaily.co.kr/images/Photo/files/NP/S/2014/08/PS14081900448.jpg"
 
-        val pizzahutItemUrl = "https://www.pizzamaru.co.kr/resources/images/menu/gold/gol1_L_01.png"
-        val papazonsItemUrl = "https://www.pizzamaru.co.kr/resources/images/menu/gold/gol1_L_01.png"
-        val misterItemUrl = "https://www.pizzamaru.co.kr/resources/images/menu/gold/gol1_L_01.png"
-        val dominoItemUrl = "https://www.pizzamaru.co.kr/resources/images/menu/gold/gol1_L_01.png"
+        val pizzahutItemUrl = "https://cools.co/wp-content/uploads/2020/04/93842752_3219959041361892_6726603892949254144_o-758x758.jpg"
+        val papazonsItemUrl = "https://cools.co/wp-content/uploads/2020/04/93842752_3219959041361892_6726603892949254144_o-758x758.jpg"
+        val misterItemUrl = "https://cools.co/wp-content/uploads/2020/04/93842752_3219959041361892_6726603892949254144_o-758x758.jpg"
+        val dominoItemUrl = "https://cools.co/wp-content/uploads/2020/04/93842752_3219959041361892_6726603892949254144_o-758x758.jpg"
 
         val pizzahutTel = "1588-5588"
         val papazonsTel = "1577-8080"

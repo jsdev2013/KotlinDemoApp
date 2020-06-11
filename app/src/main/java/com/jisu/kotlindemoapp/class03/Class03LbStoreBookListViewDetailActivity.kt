@@ -2,9 +2,11 @@ package com.jisu.kotlindemoapp.class03
 
 import android.Manifest
 import android.content.Intent
+import android.media.Image
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.Toast
 import com.bumptech.glide.Glide
 import com.gun0912.tedpermission.PermissionListener
@@ -13,12 +15,15 @@ import com.jisu.kotlindemoapp.BaseActivity
 import com.jisu.kotlindemoapp.R
 import com.jisu.kotlindemoapp.class03.adapter.MyPagerAdapter
 import com.jisu.kotlindemoapp.class03.datas.Store
+import com.jisu.kotlindemoapp.class03.fragmentsStore.Sub01MenuImgFragment
 import kotlinx.android.synthetic.main.activity_class03_lb_store_list_view_detail.*
+import kotlinx.android.synthetic.main.activity_class03_lb_store_sub01_menu_fragment.*
 
 class Class03LbStoreBookListViewDetailActivity : BaseActivity() {
 
     lateinit var myPagerAdater: MyPagerAdapter
     lateinit var mStore:Store
+//    lateinit var sub01MenuImgFg :Sub01MenuImgFragment
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,9 +33,6 @@ class Class03LbStoreBookListViewDetailActivity : BaseActivity() {
     }
 
     override fun setupEvents() {
-
-        myPagerAdater = MyPagerAdapter(supportFragmentManager, "StoreDetail")
-        imgViewPager.adapter = myPagerAdater
 
         telBtn.setOnClickListener {
 
@@ -59,10 +61,17 @@ class Class03LbStoreBookListViewDetailActivity : BaseActivity() {
     }
 
     override fun setValues() {
+
         mStore = intent.getSerializableExtra("storeData") as Store
 
         Glide.with(mContext).load(mStore.logoImg).into(logoImg)
         storeNm.text = mStore.storeNm
         storeTel.text = mStore.storeTel
+        menuImgUrlTxt.text = mStore.menuImg
+        itemImgUrlTxt.text = mStore.itemImg
+
+        myPagerAdater = MyPagerAdapter(supportFragmentManager, "StoreDetail")
+        imgViewPager.adapter = myPagerAdater
+
     }
 }
