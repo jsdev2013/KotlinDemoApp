@@ -31,6 +31,12 @@ class Class03Activity : BaseActivity() {
             val myIntent = Intent(this, Class03LbGlideTedPermissionActivity::class.java)
             startActivity(myIntent)
         }
+
+        storeBookBtn.setOnClickListener {
+            val myIntent = Intent(this, Class03LbStoreBookActivity::class.java)
+            startActivity(myIntent)
+
+        }
     }
 
     override fun setValues() {

@@ -13,7 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".class03.Class03LbFabLoadingActivity"></activity>
+        <activity android:name=".class03.Class03LbStoreBookActivity"></activity>
+        <activity android:name=".class03.Class03LbStoreBookListViewDetailActivity"></activity>
+        <activity android:name=".class03.Class03LbFabLoadingActivity" />
         <activity android:name=".class03.Class03LbGlideTedPermissionActivity" />
         <activity
             android:name=".class03.Class03LbPhotoViewActivity"

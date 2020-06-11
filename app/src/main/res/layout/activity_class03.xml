@@ -26,4 +26,10 @@
         android:layout_height="wrap_content"
         android:text="Lib (Glide + TedPermission)"/>
 
+    <Button
+        android:id="@+id/storeBookBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Store Book (Using Lib)"/>
+
 </LinearLayout>

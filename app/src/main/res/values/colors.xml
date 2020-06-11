@@ -9,5 +9,13 @@
     <color name="blue">#419BF9</color>
     <color name="green">#4FEF90</color>
     <color name="orange">#FD6432</color>
-    <color name="puple">#DAAADB</color>
+    <color name="purple">#DAAADB</color>
+    <color name="cyan">#ff00bcd4</color>
+    <color name="indigo">#ff3f51b5</color>
+    <color name="pink">#ffe91e63</color>
+    <color name="lightGreen">#ff8bc34a</color>
+    <color name="deepOrange">#ffff5722</color>
+    <color name="gray">#ff9e9e9e</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#ffc53929</color>
 </resources>
