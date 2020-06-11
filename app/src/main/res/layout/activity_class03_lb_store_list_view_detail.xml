@@ -66,19 +66,20 @@
     </LinearLayout>
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="1sp"
-        android:background="@color/lightGreen"
-        android:layout_marginTop="15dp"/>
-
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:text="이달의 추천 메뉴 &amp; 이벤트"/>
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="2sp"
+        android:background="@color/grapefruit"
+        android:layout_marginTop="15dp"/>
 
     <LinearLayout
         android:id="@+id/imgLayout"
+        android:layout_marginTop="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"

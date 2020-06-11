@@ -1,5 +1,6 @@
 package com.jisu.kotlindemoapp.class03
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.jisu.kotlindemoapp.BaseActivity
