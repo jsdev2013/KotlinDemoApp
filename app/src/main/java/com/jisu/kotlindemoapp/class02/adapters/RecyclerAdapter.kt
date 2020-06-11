@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.jisu.kotlindemoapp.R
-import com.jisu.kotlindemoapp.datas.Student
+import com.jisu.kotlindemoapp.class02.datas.Student
 import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.collections.ArrayList

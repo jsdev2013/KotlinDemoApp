@@ -1,4 +1,4 @@
-package com.jisu.kotlindemoapp.datas
+package com.jisu.kotlindemoapp.class02.datas
 
 import java.io.Serializable
 import java.text.NumberFormat

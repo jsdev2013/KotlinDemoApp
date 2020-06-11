@@ -1,4 +1,4 @@
-package com.jisu.kotlindemoapp.datas
+package com.jisu.kotlindemoapp.class02.datas
 
 class Student (val name:String, val birthYear:Int, var isMale:Boolean) {
 

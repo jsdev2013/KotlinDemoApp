@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.TextView
 import com.jisu.kotlindemoapp.R
-import com.jisu.kotlindemoapp.datas.Student
+import com.jisu.kotlindemoapp.class02.datas.Student
 import java.text.SimpleDateFormat
 import java.util.*
 

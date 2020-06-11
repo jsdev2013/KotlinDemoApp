@@ -7,7 +7,7 @@ import android.widget.Toast
 import com.jisu.kotlindemoapp.BaseActivity
 import com.jisu.kotlindemoapp.R
 import com.jisu.kotlindemoapp.class02.adapters.StudentAdapter
-import com.jisu.kotlindemoapp.datas.Student
+import com.jisu.kotlindemoapp.class02.datas.Student
 import kotlinx.android.synthetic.main.activity_class02_list_view.*
 import kotlinx.android.synthetic.main.activity_class02_student_list_item.view.*
 

@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.jisu.kotlindemoapp.R
-import com.jisu.kotlindemoapp.datas.Room
+import com.jisu.kotlindemoapp.class02.datas.Room
 import kotlinx.android.synthetic.main.activity_class02_room_list_item.view.*
 
 class RoomRecyclerAdapter(val context: Context, val rooms: ArrayList<Room>) :RecyclerView.Adapter<RoomRecyclerAdapter.ViewHolder>(){

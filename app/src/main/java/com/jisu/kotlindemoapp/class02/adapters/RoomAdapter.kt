@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.TextView
 import com.jisu.kotlindemoapp.R
-import com.jisu.kotlindemoapp.datas.Room
+import com.jisu.kotlindemoapp.class02.datas.Room
 
 class RoomAdapter(context: Context, resId: Int, list: List<Room>) : ArrayAdapter<Room>(context, resId, list) {
 

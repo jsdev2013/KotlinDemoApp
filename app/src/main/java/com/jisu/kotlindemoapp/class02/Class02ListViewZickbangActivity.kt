@@ -5,7 +5,7 @@ import android.os.Bundle
 import com.jisu.kotlindemoapp.BaseActivity
 import com.jisu.kotlindemoapp.R
 import com.jisu.kotlindemoapp.class02.adapters.RoomAdapter
-import com.jisu.kotlindemoapp.datas.Room
+import com.jisu.kotlindemoapp.class02.datas.Room
 import kotlinx.android.synthetic.main.activity_class02_list_view_zickbang.*
 
 class Class02ListViewZickbangActivity : BaseActivity() {

@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.jisu.kotlindemoapp.R
 import com.jisu.kotlindemoapp.class02.adapters.RecyclerAdapter
-import com.jisu.kotlindemoapp.datas.Student
+import com.jisu.kotlindemoapp.class02.datas.Student
 import kotlinx.android.synthetic.main.activity_class02_recycler_view.*
 
 class Class02RecyclerViewActivity : AppCompatActivity() {
