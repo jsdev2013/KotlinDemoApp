@@ -2,11 +2,8 @@ package com.jisu.kotlindemoapp.class03
 
 import android.Manifest
 import android.content.Intent
-import android.media.Image
 import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ImageView
 import android.widget.Toast
 import com.bumptech.glide.Glide
 import com.gun0912.tedpermission.PermissionListener
@@ -15,9 +12,8 @@ import com.jisu.kotlindemoapp.BaseActivity
 import com.jisu.kotlindemoapp.R
 import com.jisu.kotlindemoapp.class03.adapter.MyPagerAdapter
 import com.jisu.kotlindemoapp.class03.datas.Store
-import com.jisu.kotlindemoapp.class03.fragmentsStore.Sub01MenuImgFragment
 import kotlinx.android.synthetic.main.activity_class03_lb_store_list_view_detail.*
-import kotlinx.android.synthetic.main.activity_class03_lb_store_sub01_menu_fragment.*
+import kotlinx.android.synthetic.main.activity_class03_lb_store_list_view_detail.myTabLayout
 
 class Class03LbStoreBookListViewDetailActivity : BaseActivity() {
 
@@ -70,8 +66,11 @@ class Class03LbStoreBookListViewDetailActivity : BaseActivity() {
         menuImgUrlTxt.text = mStore.menuImg
         itemImgUrlTxt.text = mStore.itemImg
 
+
+
         myPagerAdater = MyPagerAdapter(supportFragmentManager, "StoreDetail")
         imgViewPager.adapter = myPagerAdater
+        myTabLayout.setupWithViewPager(imgViewPager)
 
     }
 }

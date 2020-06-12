@@ -26,6 +26,8 @@ class MyPagerAdapter (fm: FragmentManager, FragmentCd :String) :FragmentPagerAda
                                           else -> "뷰페이저 화면"}
             "StoreMain" -> when (position) {  0 -> "피자가게"
                                               else -> "치킨가게"}
+            "StoreDetail" -> when (position) {  0 -> "이달의 베스트 메뉴"
+                                                else -> "이벤트"}
             else -> "없음"
         }
     }

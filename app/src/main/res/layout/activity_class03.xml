@@ -32,4 +32,10 @@
         android:layout_height="wrap_content"
         android:text="Store Book (Using Lib)"/>
 
+    <Button
+        android:id="@+id/baseballGameBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Baseball Game"/>
+
 </LinearLayout>

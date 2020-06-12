@@ -37,6 +37,11 @@ class Class03Activity : BaseActivity() {
             startActivity(myIntent)
 
         }
+
+        baseballGameBtn.setOnClickListener {
+            val myIntent = Intent(this, Class03BaseballGameActivity::class.java)
+            startActivity(myIntent)
+        }
     }
 
     override fun setValues() {
