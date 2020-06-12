@@ -16,13 +16,23 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/resetBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/orange"
+            android:text="다시시작" />
 
         <EditText
             android:id="@+id/numberInputEdt"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:gravity="center"
+            android:textAlignment="center"
             android:hint="세자리 숫자를 입력"
             android:inputType="number"/>
 
@@ -30,6 +40,7 @@
             android:id="@+id/okBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@color/blue"
             android:text="입력" />
 
     </LinearLayout>

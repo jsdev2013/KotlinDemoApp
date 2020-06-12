@@ -38,4 +38,9 @@
         android:layout_height="wrap_content"
         android:text="Baseball Game"/>
 
+    <Button
+        android:id="@+id/lbFabBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LIB (Floating Button)"/>
 </LinearLayout>

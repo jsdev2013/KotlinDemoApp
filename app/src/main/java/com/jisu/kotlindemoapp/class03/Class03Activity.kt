@@ -42,6 +42,11 @@ class Class03Activity : BaseActivity() {
             val myIntent = Intent(this, Class03BaseballGameActivity::class.java)
             startActivity(myIntent)
         }
+
+        lbFabBtn.setOnClickListener {
+            val myIntent = Intent(this, Class03LbFloatingActionButtonActivity::class.java)
+            startActivity(myIntent)
+        }
     }
 
     override fun setValues() {

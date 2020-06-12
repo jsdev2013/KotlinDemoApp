@@ -37,6 +37,28 @@ class Class03BaseballGameActivity : BaseActivity() {
 
     override fun setupEvents() {
 
+        resetBtn.setOnClickListener {
+
+            //변수 초기화
+            tryNumberStrArr.clear()     //    시도한 숫자들을 저장하는 배열
+            computerNumbers.clear()     //    컴퓨터가 낸 문제 숫자 세개를 저장 ArrayList
+            chatMessageList.clear()     //    채팅 내역 삭제
+            inputCount = 0              //    몇번 시도 했는지 저장할 변수
+
+            // 버튼 활성화
+            numberInputEdt.isEnabled = true
+            okBtn.isEnabled = true
+
+            val myHandler = Handler()
+            myHandler.postDelayed({
+                chatMessageList.add(Chat("CPU", "다시 시작합니다."))
+                mChatAdapter.notifyDataSetChanged()
+            }, 1000)
+
+            // 컴퓨터가 다시 숫자 생성
+            makeComputerNumber(true)
+        }
+
         okBtn.setOnClickListener {
 //            사용자가 입력한 값을 String으로 우선 저장
             val inputNumStr = numberInputEdt.text.toString()
@@ -106,11 +128,11 @@ class Class03BaseballGameActivity : BaseActivity() {
 
 
 //        컴퓨터에게 문제를 내라고 시키자. => 문제 : 3칸자리 숫자 배열.
-        makeComputerNumber()
+        makeComputerNumber(false)
 
     }
 
-    fun makeComputerNumber() {
+    fun makeComputerNumber(reset:Boolean) {
 
 //        숫자 3개를 랜덤 생성. => 3번 반복.
         for (i in 0..2) {
@@ -159,22 +181,23 @@ class Class03BaseballGameActivity : BaseActivity() {
             Log.d("최종선발문제", num.toString())
         }
 
+        // reset 인 경우 출력 안함
+        if (!reset) {
+
 //        문제를 다 내고, 안내 메세지를 채팅으로 출력.
-        chatMessageList.add(Chat("CPU", "숫자 야구 게임에 오신것을 환영합니다."))
-        mChatAdapter.notifyDataSetChanged()
-
-        Handler().postDelayed({
-            chatMessageList.add(Chat("CPU", "제가 생각하는 세자리 숫자를 맞춰주세요."))
+            chatMessageList.add(Chat("CPU", "숫자 야구 게임에 오신것을 환영합니다."))
             mChatAdapter.notifyDataSetChanged()
-        }, 1500)
 
-        Handler().postDelayed({
-            chatMessageList.add(Chat("CPU", "1~9의 숫자로만 구성되고, 중복된 숫자는 없습니다."))
-            mChatAdapter.notifyDataSetChanged()
-        }, 3000)
+            Handler().postDelayed({
+                chatMessageList.add(Chat("CPU", "제가 생각하는 세자리 숫자를 맞춰주세요."))
+                mChatAdapter.notifyDataSetChanged()
+            }, 1500)
 
-
-
+            Handler().postDelayed({
+                chatMessageList.add(Chat("CPU", "1~9의 숫자로만 구성되고, 중복된 숫자는 없습니다."))
+                mChatAdapter.notifyDataSetChanged()
+            }, 3000)
+        }
     }
 
     //    ?S ?B인지 계산해서 리스트뷰에 답장 띄우기 기능 담당 함수
