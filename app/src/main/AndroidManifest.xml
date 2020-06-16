@@ -13,7 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".class03.Class03BaseballGameActivity"></activity>
+        <activity android:name=".class04.Class04Activity"></activity>
+        <activity android:name=".class03.Class03BaseballGameActivity" />
         <activity android:name=".class03.fragmentsStore.Sub03LocationImgFragment" />
         <activity android:name=".class03.Class03LbStoreBookActivity" />
         <activity android:name=".class03.Class03LbStoreBookListViewDetailActivity" />

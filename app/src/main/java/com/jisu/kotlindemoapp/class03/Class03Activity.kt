@@ -47,6 +47,7 @@ class Class03Activity : BaseActivity() {
             val myIntent = Intent(this, Class03LbFloatingActionButtonActivity::class.java)
             startActivity(myIntent)
         }
+
     }
 
     override fun setValues() {
