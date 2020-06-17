@@ -13,10 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".class04.Class04DbRoomRecyclerViewDetailActivity"></activity>
+        <activity android:name=".class04.Class04DbRestApiMainActivity"></activity>
+        <activity android:name=".class04.Class04DbRoomRecyclerViewDetailActivity" />
         <activity android:name=".class04.Class04DbRoomRecyclerViewAddActivity" />
         <activity android:name=".class04.Class04DbRestApiSignUpActivity" />
-        <activity android:name=".class04.Class04DbRestApiActivity" />
+        <activity android:name=".class04.Class04DbRestApiLoginActivity" />
         <activity android:name=".class04.Class04DbRoomRecyclerViewActivity" />
         <activity android:name=".class04.Class04Activity" />
         <activity android:name=".class03.Class03BaseballGameActivity" />

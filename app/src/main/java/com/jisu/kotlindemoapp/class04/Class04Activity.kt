@@ -22,7 +22,7 @@ class Class04Activity : BaseActivity() {
         }
 
         dbRestfulApiBtn.setOnClickListener {
-            val myIntent = Intent(mContext, Class04DbRestApiActivity::class.java)
+            val myIntent = Intent(mContext, Class04DbRestApiLoginActivity::class.java)
             startActivity(myIntent)
         }
     }

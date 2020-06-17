@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="25dp"
-    tools:context=".class04.Class04DbRestApiActivity">
+    tools:context=".class04.Class04DbRestApiLoginActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
