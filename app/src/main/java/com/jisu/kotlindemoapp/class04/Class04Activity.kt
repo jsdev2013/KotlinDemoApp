@@ -16,8 +16,13 @@ class Class04Activity : BaseActivity() {
     }
 
     override fun setupEvents() {
-        dbRoomBtn.setOnClickListener {
+        dbRoomCatBtn.setOnClickListener {
             val myIntent = Intent(mContext, Class04DbRoomRecyclerViewActivity::class.java)
+            startActivity(myIntent)
+        }
+
+        dbRoomWordBtn.setOnClickListener {
+            val myIntent = Intent(mContext, Class04DbRoomWordMainActivity::class.java)
             startActivity(myIntent)
         }
 

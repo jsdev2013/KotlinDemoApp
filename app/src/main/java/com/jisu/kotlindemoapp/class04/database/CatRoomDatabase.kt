@@ -8,17 +8,17 @@ import com.jisu.kotlindemoapp.class04.dao.CatDao
 import com.jisu.kotlindemoapp.class04.entity.Cat
 
 @Database(entities = [Cat::class], version = 1)
-abstract class CatDB: RoomDatabase() {
+abstract class CatRoomDatabase: RoomDatabase() {
     abstract fun catDao(): CatDao
 
     companion object {
-        private var INSTANCE: CatDB? = null
+        private var INSTANCE: CatRoomDatabase? = null
 
-        fun getInstance(context: Context): CatDB? {
+        fun getInstance(context: Context): CatRoomDatabase? {
             if (INSTANCE == null) {
-                synchronized(CatDB::class) {
+                synchronized(CatRoomDatabase::class) {
                     INSTANCE = Room.databaseBuilder(context.applicationContext,
-                        CatDB::class.java, "cat.db")
+                        CatRoomDatabase::class.java, "cat.db")
                         .fallbackToDestructiveMigration()
                         .build()
                 }

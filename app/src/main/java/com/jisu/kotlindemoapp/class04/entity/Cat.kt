@@ -10,6 +10,7 @@ class Cat(@PrimaryKey(autoGenerate = true) var id: Long?,
           @ColumnInfo(name = "catname") var catName: String?,
           @ColumnInfo(name = "lifespan") var lifeSpan: Int,
           @ColumnInfo(name = "origin") var origin: String
-) : Serializable {
+) // : Serializable
+{
     constructor(): this(null,"", 0,"")
 }

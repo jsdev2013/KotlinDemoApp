@@ -10,13 +10,13 @@ import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.jisu.kotlindemoapp.R
 import com.jisu.kotlindemoapp.class04.adapter.CatAdapter
-import com.jisu.kotlindemoapp.class04.database.CatDB
+import com.jisu.kotlindemoapp.class04.database.CatRoomDatabase
 import com.jisu.kotlindemoapp.class04.entity.Cat
 import kotlinx.android.synthetic.main.activity_class04_db_room_recycler_view.*
 
 class Class04DbRoomRecyclerViewActivity : AppCompatActivity() {
 
-    private var catDb : CatDB? = null
+    private var catRoomDatabase : CatRoomDatabase? = null
     private var catList = listOf<Cat>()
     lateinit var mAdapter : CatAdapter
 
@@ -24,18 +24,17 @@ class Class04DbRoomRecyclerViewActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_class04_db_room_recycler_view)
 
-        catDb = CatDB.getInstance(this)
+        catRoomDatabase = CatRoomDatabase.getInstance(this)
 
         val r = Runnable {
             try {
-                catList = catDb?.catDao()?.getAll()!!
+                catList = catRoomDatabase?.catDao()?.selectAll()!!
                 mAdapter = CatAdapter(this, catList) {
                         cat ->
                     Toast.makeText(this, "Id: ${cat.id}, Name: ${cat.catName}, LifeSpan: ${cat.lifeSpan}, Origin: ${cat.origin},", Toast.LENGTH_SHORT).show()
 
                     val myIntent = Intent(this, Class04DbRoomRecyclerViewDetailActivity::class.java)
-                    val clickedCat = cat
-                    myIntent.putExtra("catData", clickedCat)
+                    myIntent.putExtra("clickedCatId", cat.id.toString())
                     startActivity(myIntent)
                 }
                 mAdapter.notifyDataSetChanged()
@@ -46,7 +45,7 @@ class Class04DbRoomRecyclerViewActivity : AppCompatActivity() {
             } catch (e: Exception) {
                 Log.d("tag", "Error - $e")
             } finally {
-                catDb!!.close()
+                catRoomDatabase!!.close()
             }
         }
 
@@ -61,7 +60,7 @@ class Class04DbRoomRecyclerViewActivity : AppCompatActivity() {
 
         val deleteAllRunnable = Runnable {
             try {
-                catDb?.catDao()?.deleteAll()
+                catRoomDatabase?.catDao()?.deleteAll()
             } catch(e: Exception) {
                 Log.d("tag", "Error - $e")
             }
@@ -85,8 +84,8 @@ class Class04DbRoomRecyclerViewActivity : AppCompatActivity() {
     }
 
     override fun onDestroy() {
-        CatDB.destroyInstance()
-        catDb = null
+        CatRoomDatabase.destroyInstance()
+        catRoomDatabase = null
         super.onDestroy()
     }
 }
