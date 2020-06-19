@@ -29,7 +29,7 @@ class Class04DbRoomWordMainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_class04_db_room_word_main)
-        setSupportActionBar(toolbar)
+        //setSupportActionBar(toolbar)
 
         val adapter = WordListAdapter(this)
         recyclerview.adapter = adapter

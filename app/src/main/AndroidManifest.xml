@@ -13,7 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".class04.Class04DbRestApiSplashActivity"></activity>
+        <activity android:name=".class03.fragmentsTab.Class03LbTabLayoutVtT1Fragment"></activity>
+        <activity android:name=".class03.Class03LbTabLayoutVtActivity" />
+        <activity android:name=".class04.Class04DbRestApiSplashActivity" />
         <activity android:name=".class04.Class04DbRestApiViewTopicDetailActivity" />
         <activity android:name=".class04.Class04DbRestApiMainActivity" />
         <activity android:name=".class04.Class04DbRoomRecyclerViewDetailActivity" />

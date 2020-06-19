@@ -8,6 +8,7 @@ import com.jisu.kotlindemoapp.class04.repository.WordRepository
 
 
 class WordViewModel : AndroidViewModel {
+
     private val repository: WordRepository
     private val allWords: LiveData<List<Word>>
 
@@ -17,6 +18,7 @@ class WordViewModel : AndroidViewModel {
     }
 
     fun getAllWords(): LiveData<List<Word>> = allWords
+
     fun insert(word: Word) {
         repository.insert(word)
     }

@@ -13,6 +13,7 @@ import com.jisu.kotlindemoapp.class03.fragmentsStore.Sub01MenuImgFragment
 import com.jisu.kotlindemoapp.class03.fragmentsStore.Sub02ItemImgFragment
 import com.jisu.kotlindemoapp.class03.fragmentsSub.SubFirstFragment
 import com.jisu.kotlindemoapp.class03.fragmentsSub.SubSecondFragment
+import com.jisu.kotlindemoapp.class03.fragmentsTab.Class03LbTabLayoutVtT1Fragment
 
 class MyPagerAdapter (fm: FragmentManager, FragmentCd :String) :FragmentPagerAdapter(fm) {
 
@@ -28,6 +29,13 @@ class MyPagerAdapter (fm: FragmentManager, FragmentCd :String) :FragmentPagerAda
                                               else -> "치킨가게"}
             "StoreDetail" -> when (position) {  0 -> "이달의 베스트 메뉴"
                                                 else -> "이벤트"}
+            "TabVt" -> when (position)  {   0 -> "프로필변경"
+                                            1 -> "총급여액"
+                                            2 -> "인적공제"
+                                            3 -> "소득공제"
+                                            4 -> "세액감면"
+                                            5 -> "세액공제"
+                                           else -> "상세결과"}
             else -> "없음"
         }
     }
@@ -43,6 +51,13 @@ class MyPagerAdapter (fm: FragmentManager, FragmentCd :String) :FragmentPagerAda
                                               else -> ChickenFragment()}
             "StoreDetail" -> when (position) {  0 -> Sub01MenuImgFragment()
                                                 else -> Sub02ItemImgFragment()}
+            "TabVt" -> when (position)  {   0 -> Class03LbTabLayoutVtT1Fragment()
+                                            1 -> Class03LbTabLayoutVtT1Fragment()
+                                            2 -> Class03LbTabLayoutVtT1Fragment()
+                                            3 -> Class03LbTabLayoutVtT1Fragment()
+                                            4 -> Class03LbTabLayoutVtT1Fragment()
+                                            5 -> Class03LbTabLayoutVtT1Fragment()
+                                            else -> Class03LbTabLayoutVtT1Fragment()}
             else -> MainEtcFragment()
         }
     }
@@ -53,6 +68,7 @@ class MyPagerAdapter (fm: FragmentManager, FragmentCd :String) :FragmentPagerAda
             "Sub" -> return 2
             "StoreMain" -> return 2
             "StoreDetail" -> return 2
+            "TabVt" -> return 7
             else -> return 0
         }
     }

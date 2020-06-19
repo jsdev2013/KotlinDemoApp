@@ -48,6 +48,11 @@ class Class03Activity : BaseActivity() {
             startActivity(myIntent)
         }
 
+        lbTblVtBtn.setOnClickListener {
+            val myIntent = Intent(this, Class03LbTabLayoutVtActivity::class.java)
+            startActivity(myIntent)
+        }
+
     }
 
     override fun setValues() {
